@@ -1,0 +1,4 @@
+# exclude
+*
+# except
+!target/*.jar
