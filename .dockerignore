@@ -2,3 +2,4 @@
 *
 # except
 !target/*.jar
+!target/thin/root/**

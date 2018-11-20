@@ -1,6 +1,6 @@
-# Spring Boot Fat JAR
+# Spring Boot Thin JAR
 The simplest possible "hey world" application, with just one spring-boot-starter-web dependency.
-Includes a Dockerfile with one stage build with one application layer. In addition for convenience, there is a Docker Compose configuration file.  
+Includes a Dockerfile with one stage build with two layers, one for dependencies and one for application. In addition for convenience, there is a Docker Compose configuration file.  
 
 
 ## Building
@@ -20,7 +20,6 @@ $ docker image build --tag spring-boot-examples .
 $ docker image rm spring-boot-examples
 $ docker image prune
 ```
-
 
 ### Docker Compose
 

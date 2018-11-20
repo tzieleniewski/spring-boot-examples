@@ -27,10 +27,29 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${org.springframework.boot.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.springframework.boot.experimental</groupId>
+                        <artifactId>spring-boot-thin-layout</artifactId>
+                        <version>${org.springframework.boot.experimental.thin.version}</version>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <goals>
                             <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot.experimental</groupId>
+                <artifactId>spring-boot-thin-maven-plugin</artifactId>
+                <version>${org.springframework.boot.experimental.thin.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>resolve</goal>
                         </goals>
                     </execution>
                 </executions>
@@ -69,6 +88,7 @@
     <properties>
         <jdk.version>10</jdk.version>
         <org.springframework.boot.version>2.1.0.RELEASE</org.springframework.boot.version>
+        <org.springframework.boot.experimental.thin.version>1.0.17.RELEASE</org.springframework.boot.experimental.thin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
