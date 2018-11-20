@@ -1,6 +1,7 @@
-The master branch contains the skeleton for Spring Boot examples.
+# Spring Boot Fat JAR
+The simplest possible "hey world" application, with just one spring-boot-starter-web dependency.
+Includes a Dockerfile with one stage build with one application layer. In addition for convenience, there is a Docker Compose configuration file.  
 
-# spring-boot-examples
 
 ## Building
 ```bash
