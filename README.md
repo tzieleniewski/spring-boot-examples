@@ -20,20 +20,6 @@ $ docker image rm spring-boot-examples
 $ docker image prune
 ```
 
-#### Container creation
-```bash
-$ docker create --name spring-boot-examples -p 8080:8080 spring-boot-examples
-```
-
-#### Container listing
-```bash
-$ docker ps -a
-```
-
-#### Container removal
-```bash
-$ docker rm spring-boot-examples
-```
 
 ### Docker Compose
 
@@ -54,6 +40,33 @@ $ java -jar target\spring-boot-examples.jar
 $ mvn spring-boot:run
 ```
 
+### Docker
+
+#### Container creation
+```bash
+$ docker create --name spring-boot-examples -p 8080:8080 spring-boot-examples
+```
+
+#### Container starting
+```bash
+$ docker start spring-boot-examples
+```
+
+#### Container logging
+```bash
+$ docker logs spring-boot-examples -f
+```
+
+#### Container stopping
+```bash
+$ docker stop spring-boot-examples
+```
+
+#### Container removal
+```bash
+$ docker rm spring-boot-examples
+```
+
 ### Docker Compose
 
 #### Starting
@@ -64,21 +77,4 @@ $ docker-compose up
 #### Stopping
 ```bash
 $ docker-compose down
-```
-
-### Docker container
-
-#### Starting
-```bash
-$ docker start spring-boot-examples
-```
-
-#### Logging
-```bash
-$ docker logs spring-boot-examples -f
-```
-
-#### Stopping
-```bash
-$ docker stop spring-boot-examples
 ```
